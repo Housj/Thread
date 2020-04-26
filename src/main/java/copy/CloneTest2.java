@@ -25,7 +25,8 @@ public class CloneTest2
         System.out.println(student3.getTeacher().getAge());
         teacher.setName("teacher niesong");//不会又任何影响
         System.out.println(student3.getTeacher().getName());
-
+        System.out.println(student2.getTeacher().equals(student3.getTeacher()));
+        System.gc();
     }
 
 }

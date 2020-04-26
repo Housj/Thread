@@ -20,7 +20,7 @@ public class LRULinkedMap<T,V> {
     public LRULinkedMap(int cacheSize){
         this.cacheSize = cacheSize;
 
-        cacheMap = new LinkedHashMap(2, 0.75F, true){
+        cacheMap = new LinkedHashMap(cacheSize, 1, true){
 
             protected <Entry> boolean removeEldestEntry(Entry eldest) {
                 if(cacheSize + 1 == cacheMap.size()){

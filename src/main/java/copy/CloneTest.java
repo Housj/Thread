@@ -10,20 +10,23 @@ public class CloneTest {
         Student student = new Student();
         student.setAge(24);
         student.setName("niesong");
+        student.setTeacher(new Teacher1(1,"2".toString()));
         Student student2 = (Student)student.clone();
         //这个是调用下面的那个方法，然后把这个这个对象Clone到student
         System.out.println("Age:" + student2.getAge() + " " + "Name:" + student2.getName());
         student2.setAge(23);
         student2.setName("a");
-        student.setTeacher(new Teacher1(1,"2".toString()));
+        student2.setTeacher(new Teacher1(2,"3".toString()));
         //克隆后得到的是一个新的对象，所以重新写的是student2这个对象的值
         System.out.println(student.getName());
         System.out.println(student2.getName());
         System.out.println(student.getAge());
         System.out.println(student2.getAge());
-//        System.out.println(student.getTeacher().getName());
         System.out.println(student.getTeacher().getName());
+        System.out.println(student.getTeacher().getName());
+        System.out.println(student2.getTeacher().getName());
         System.out.println(student.getClass()==student2.getClass());
+        System.out.println(student.getTeacher().equals(student2.getTeacher()));
     }
 
 

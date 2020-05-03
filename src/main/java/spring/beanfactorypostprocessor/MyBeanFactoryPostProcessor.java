@@ -1,4 +1,4 @@
-package spring.beanfactorypostprocessor;
+package  spring.beanfactorypostprocessor;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanDefinition;
@@ -6,7 +6,7 @@ import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.support.GenericBeanDefinition;
 import org.springframework.stereotype.Component;
-import spring.bean.UserB;
+import  spring.bean.UserB;
 
 @Component
 //工厂挂钩，允许自定义修改应用程序上下文bean定义，以适应上下文基础bean工厂的bean属性值

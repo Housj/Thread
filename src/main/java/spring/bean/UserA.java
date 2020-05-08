@@ -43,6 +43,6 @@ public class UserA implements InitializingBean {
 
     @PostConstruct
     public void Pointcut(){
-        System.out.println("第一 Pointcut...");
+        System.out.println("第一 PostConstruct...");
     }
 }

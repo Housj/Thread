@@ -17,15 +17,15 @@ public class Test {
 
 //        annoApplicationContext.getBean(UserA.class).say();
 
-//        UserA userA = (UserA)annoApplicationContext.getBean("userA");
-//        userA.say();
+        UserA userA = (UserA)annoApplicationContext.getBean("userA");
+        userA.say();
 
 //        UserB userB = (UserB)annoApplicationContext.getBean("userAA");
 //        userB.say();
 
 //          annoApplicationContext.getBean(UserC.class).say();
 
-        annoApplicationContext.getBean("userD",UserD.class).say();
-        annoApplicationContext.getBean("userE",UserE.class).say();
+//        annoApplicationContext.getBean("userD",UserD.class).say();
+//        annoApplicationContext.getBean("userE",UserE.class).say();
     }
 }

@@ -9,11 +9,11 @@ import org.springframework.context.annotation.Configuration;
 import  spring.bean.UserA;
 
 @ComponentScan("spring")
-@MapperScan("mapper")
+//@MapperScan("mapper")
 public class AppConfig {
 
-//    @Bean(initMethod = "init")
-//    public UserA userA(){
-//      return new UserA();
-//    }
+    @Bean(initMethod = "init")
+    public UserA userA(){
+      return new UserA();
+    }
 }

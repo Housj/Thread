@@ -3,7 +3,9 @@ package j8;
 //@FunctionalInterface
 public interface Inter {
 
-    void say(String name);
+    default void say(String name){
+        System.out.println(name);
+    };
 
 
 }
